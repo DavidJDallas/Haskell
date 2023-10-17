@@ -1,5 +1,25 @@
 sayHello :: String -> IO()
 sayHello x = putStrLn("hello, " ++ x ++ "!")
 
--- Everything in haskell is an expression or declaration. Expressions may 
--- Expressions are in normal form when there aren't any more evaluation steps to be taken. 
+-- :: is a type signature. 
+
+-- Everything in haskell is an expression or declaration. Expressions may be values, combinations of values, and/or functions applied to values.
+
+--Expressions are the building blocks of our programmes, and programmes themselves are one big expression made of smaller expressions. 
+-- We say that an expression is in normal form when there aren't any more evaluation steps left to take. 
+-- Recall the definitions in Lambda calculus of expressions - they are either abstractions or variables or both. 
+
+-- Remember also that all functions in Haskell take 1 argument and return 1 result. To pass multiple arguments, we apply a series of nested functions called currying.
+
+--- Defining Functions ---
+
+-- Names of modules and names of types start with a capital letter. Function names start with lowercase letters. 
+
+-- Type variables generally start at a and go up. 
+-- Functions can be used as arguments and are typically labelled with variables starting at f and incrementing. 
+-- Usually f' denotes a function that is closely related to or is a helper function.
+
+--- Infix Operators ---
+
+-- Functions in Haskell default to prefix syntax, meaning that the function being applied is at the beginning of the expression rather than the middle. 
+-- Not all functions are prefix, though. 
