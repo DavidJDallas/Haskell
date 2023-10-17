@@ -1,5 +1,6 @@
-sayHello :: String -> IO()
-sayHello x = putStrLn("hello, " ++ x ++ "!")
+module Chapter2 where
+
+
 
 -- :: is a type signature. 
 
@@ -23,3 +24,12 @@ sayHello x = putStrLn("hello, " ++ x ++ "!")
 
 -- Functions in Haskell default to prefix syntax, meaning that the function being applied is at the beginning of the expression rather than the middle. 
 -- Not all functions are prefix, though. 
+
+--- Declaring Values ---
+
+-- The order of declarations in a source code file doesn't matter because GHCi loads the entire file at once. 
+
+--- Arithmetic Functions in Haskell ---
+
+-- div = integral division, round down  ;   mod = modulo  ; quot = integral division, round towards zero  ;  rem = remainder after division.
+
